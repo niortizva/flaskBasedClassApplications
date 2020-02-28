@@ -26,8 +26,11 @@ class main(homeView, appView1, appView2):
     self.App.app.route('/')(self.mainHomeView)
     self.App.app.route('/1')(self.mainAppView1)
     self.App.app.route('/2')(self.mainAppView2)
+    
+  def run(self):
+    self.App.app.run()
 
 
 if __name__ == "__main__":
   mainApp = main()
-  mainApp.App.app.run()
+  mainApp.run()
