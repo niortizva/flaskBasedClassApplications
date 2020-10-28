@@ -1,12 +1,14 @@
+# -*- coding: utf-8 -*-
 
-class homeView(object):
-  """Home view class
-  """
 
-  def __init__(self):
-    self.msgHome = "Home view !!"
-
-  def mainHomeView(self):
-    """Home View controller.
+class HomeView(object):
+    """Home view class
     """
-    return self.msgHome
+
+    def __init__(self):
+        self.msgHome = "Home view !!"
+
+    def main_home_view(self):
+        """Home View controller.
+        """
+        return self.msgHome
